@@ -1,11 +1,12 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .navigation {
     background-color: #FFC1D4;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,6 +16,12 @@ body {
     display: flex;
     gap: 50px;
     list-style-type: none;
+    margin-right: 50px;
+}
+
+a {
+    color: #000000;
+    text-decoration: 0;
 }
 
 .logo-nav img {
@@ -26,14 +33,28 @@ body {
     display: none;
     border: none;
     background-color: #FFC1D4;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
     .links-list {
+        top: 0;
+        left: 0;
+        padding-left: 0;
+        padding-top: 50px;
+        margin-top: 0;
         display: none;
         flex-direction: column;
         position: fixed;
-        justify-content: center;
+        height: 100dvh;
+        width: 50vw;
+        background-color: #F6AEC4;
+        z-index: 1000;
+    }
+
+    .links-list li {
+        width: 100%;
+        text-align: center;
     }
 
     .hamburger-menu {
@@ -42,5 +63,6 @@ body {
 
     .links-list.active-list {
         display: flex;
+        justify-content: flex-start;
     }
 }
