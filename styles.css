@@ -31,12 +31,13 @@ body {
 }
 
 .links-list a:hover {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .logo-nav img {
     height: 90px;
     width: 180px;
+    margin-left: 190px;
 }
 
 .hamburger-menu {
