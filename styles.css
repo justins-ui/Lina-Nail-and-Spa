@@ -19,9 +19,19 @@ body {
     margin-right: 50px;
 }
 
-a {
+.links-list li {
+    width: 89px;
+    text-align: center;
+}
+
+.links-list a {
     color: #000000;
     text-decoration: 0;
+    letter-spacing: 2.4%;
+}
+
+.links-list a:hover {
+    font-weight: 700;
 }
 
 .logo-nav img {
