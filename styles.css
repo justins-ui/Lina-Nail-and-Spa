@@ -1,6 +1,6 @@
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -14,13 +14,13 @@ body {
 
 .links-list {
     display: flex;
-    gap: 50px;
+    gap: 3vw;
     list-style-type: none;
-    margin-right: 50px;
+    margin-right: 13%;
 }
 
 .links-list li {
-    width: 89px;
+    width: 6vw;
     text-align: center;
 }
 
@@ -34,10 +34,10 @@ body {
     font-weight: 600;
 }
 
-.logo-nav img {
-    height: 90px;
-    width: 180px;
-    margin-left: 190px;
+.logo-nav {
+    height: 6.25%;
+    width: 12.5%;
+    margin-left: 13%;
 }
 
 .hamburger-menu {
@@ -45,14 +45,16 @@ body {
     border: none;
     background-color: #FFC1D4;
     cursor: pointer;
+    margin-right: 10%;
 }
 
 @media (max-width: 768px) {
     .links-list {
+        gap: 5dvh;
         top: 0;
         left: 0;
         padding-left: 0;
-        padding-top: 50px;
+        padding-top: 10dvh;
         margin-top: 0;
         display: none;
         flex-direction: column;
@@ -61,6 +63,10 @@ body {
         width: 50vw;
         background-color: #F6AEC4;
         z-index: 1000;
+    }
+
+    .logo-nav {
+        margin-left: 10%;
     }
 
     .links-list li {
